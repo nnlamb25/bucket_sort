@@ -30,7 +30,8 @@ def recvall(sock, n):
     return data
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(('192.168.1.130', 1088))#('localhost', 1088))#
+s.connect(('192.168.1.130', 1088))#('localhost', 1088))# 
+                            #Figure out the client's ip address, otherwise use 'localhost' to run on the same machine.
 
 data = recv_msg(s)
 
